@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Land Page</title>
+    <link rel="icon" href="https://png.pngtree.com/png-vector/20190227/ourmid/pngtree-vector-bank-icon-png-image_708538.jpg">
+
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+
+
+
+    <!-- Navbar goes here -->
+    <nav class=" bg-[#252526] shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between bg-[#252526] md:hidden">
+
+                <div>
+                    <a href=""><img class="w-[20%]"
+                            src="https://down-yuantu.pngtree.com/element_our/bg/20190226/bg/a95e566acf601.png?e=1700835292&st=NjBkZjQ4NjM0OGFkNDc0Yjg4YTliZDdhNTk1MDZkODI&n=%E2%80%94Pngtree%E2%80%94vector+bank+icon_4091867.png" alt=""></a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-gray-500 hover:text-green-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <a href="">
+                    <h1 class="text-white text-lg p-2"><i class="fa-solid fa-money-bill ms-7 p-1"></i> Payment</h1>
+                </a>
+                <a href="">
+                    <h1 class="text-white text-lg p-1"><i class="fa-solid fa-money-bill-transfer ms-7 p-2"></i>Withdraw
+                        & Transfer</h1>
+                </a>
+                <a href="">
+                    <h1 class="text-white text-lg p-1"><i class="fa-solid fa-coins ms-7 p-2"></i>Capital Advance</h1>
+                </a>
+                <a href="">
+                    <h1 class="text-white text-lg p-1"><i
+                            class="fa-solid fa-square-person-confined ms-7 p-2"></i>Account Activity</h1>
+                </a>
+                <a href="">
+                    <h1 class="text-white text-lg p-1"><i class="fa-regular fa-credit-card ms-7 p-2"></i>Banks & Cards
+                    </h1>
+                </a>
+            </ul>
+        </div>
+        <script>
+            const btn = document.querySelector("button.mobile-menu-button");
+            const menu = document.querySelector(".mobile-menu");
+
+            btn.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        </script>
+
+        
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="flex">
+        <aside class="w-48 fixed left-0 top-0 h-screen bg-[#252526] p-10 hidden md:block text-center">
+
+            <a href=""><img src="https://down-yuantu.pngtree.com/element_our/bg/20190226/bg/a95e566acf601.png?e=1700835292&st=NjBkZjQ4NjM0OGFkNDc0Yjg4YTliZDdhNTk1MDZkODI&n=%E2%80%94Pngtree%E2%80%94vector+bank+icon_4091867.png" alt=""></a>
+
+            <a href="">
+                <h1 class="text-white text-xl p-2"><i class="fa-solid fa-money-bill "></i> Payment</h1>
+            </a>
+            <a href="">
+                <h1 class="text-white text-xl p-2"><i class="fa-solid fa-money-bill-transfer "></i>Withdraw &
+                    Transfer</h1>
+            </a>
+            <a href="">
+                <h1 class="text-white text-xl p-2"><i class="fa-solid fa-coins "></i><br>Capital Advance</h1>
+            </a>
+            <a href="">
+                <h1 class="text-white text-xl p-2"><i class="fa-solid fa-square-person-confined "></i><br>Account
+                    Activity</h1>
+            </a>
+            <a href="">
+                <h1 class="text-white text-xl p-2"><i class="fa-regular fa-credit-card"></i><br>Banks & Cards</h1>
+            </a>
+
+
+        </aside>
+
+
+
+
+
+
+
+
+
+
+
+        <main class="flex-1 md:ml-48">
+            <div class="">
+                <div class="bg-slate-400 shadow pt-1">
+                    <div class="flex justify-between logo ">
+                        <div class="">
+                            <h1 class="font-medium  text-lg text-white ms-9 mx-4 mt-4">
+                                <i class="fa-solid fa-wallet"></i>
+                                Home
+                            </h1>
+
+
+
+                        </div>
+                        <div class="text-2xl text-white pe-8 mt-4 pb-3">
+                            <i class="fa-regular fa-circle-question"></i>
+                        </div>
+                    </div>
+                    <div class="border-t-[2px] pb-3"></div>
+                </div>
+            </div>
+            <div class="">
+
+                <section id="promotion" class="bg-slate-400 pt-[9px] pb-[5px] ">
+
+                    <!-- Jumbotron -->
+                    <div class="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 m-8  text-center"
+                        style="background-image: url('https://images.pexels.com/photos/2395249/pexels-photo-2395249.jpeg?auto=compress&cs=tinysrgb&w=400'); height: 400px">
+                        <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-fixed"
+                            style="background-color: rgba(0, 0, 0, 0.6)">
+
+
+                            <div class="m-4"><button type="button"
+                                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 float-right">
+                                    <span class="sr-only">Close menu</span>
+                                    <!-- Heroicon name: outline/x -->
+                                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M6 18L18 6M6 6l12 12" />
+                                    </svg>
+                                </button></div>
+
+
+                            <div class="flex h-full items-center justify-center ms-7">
+                                <div class="text-white">
+                                    <i class="fa-solid fa-bell text-6xl" style="color: #00ffd5;"></i>
+                                    <h2 class="mb-4 text-4xl font-semibold">Default Promotion Receiver</h2>
+                                    <p class="mb-4 text-2xl text-[#3dd976]  ">
+                                        Default Promotion Receiver.
+                                    </p>
+                                    <button type="button"
+                                        class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-[#e62929] hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10 bg-orange-600"
+                                        data-te-ripple-init data-te-ripple-color="light">
+                                        Accept
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jumbotron -->
+
+                </section>
+
+            </div>
+            <div class="">
+                <section class="bg-slate-400 pb-9 ">
+
+                    <h1 class="text-white text-4xl p-3 text-center">User Account</h1>
+                    <h1 class="text-white text-4xl p-3">Overview</h1>
+
+                    <div class=" grid grid-cols-3 ">
+                        <div
+                            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-[#3381fb] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+
+                            <div class="p-6 ">
+
+
+                                <h5
+                                    class="mb-2 text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Deposit
+                                </h5>
+
+                                <h4 class="text-4xl">$ <span id="deposit-total">000</span></h4>
+
+                            </div>
+                        </div>
+                        <div
+                            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-[#f5ae02] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+
+                            <div class="p-6 ">
+                                <h5
+                                    class="mb-2 text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Withdraw
+                                </h5>
+
+                                <h4 class="text-4xl">$ <span id="withdraw-total">000</span></h4>
+
+                            </div>
+                        </div>
+                        <div
+                            class="mx-3 mt-6 flex flex-col self-start rounded-lg bg-[#17ae59] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700 sm:shrink-0 sm:grow sm:basis-0">
+
+                            <div class="p-6 ">
+
+
+                                <h5
+                                    class="mb-2 text-2xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+                                    Balance
+                                </h5>
+
+                                <h4 class="text-4xl">$ <span id="balance-total">000</span></h4>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="lg:grid grid-cols-2 gap-5 mt-5 w-[99%] pb-[9px] ps-[12px] ">
+                        <div class="bg-green-500 p-8 rounded-lg mt-[5px] w-[99%] md:w-[100%]  text-white">
+                            <h3 class="text-2xl ">Please Deposit Your Amount</h3>
+                            <input id="deposit-input" class="w-3/4 h-8 rounded mt-4 px-3 text-black"
+                                placeholder="$ Please Give Your Deposit Amount" type="number">
+                            <button id="deposit-button"
+                                class="text-white bg-blue-600 rounded font-semibold py-2 px-3 block mt-4 hover:bg-[#a791d8]">
+                                Deposit</button>
+                        </div>
+                        <div
+                            class="bg-red-500 p-8 rounded-lg mt-[24px]  lg:mt-[5px] md:me-0 w-[99%] md:w-[100%] text-white">
+                            <h3 class="text-2xl ">Please Withdraw Your Amount</h3>
+                            <input id="withdraw-input" class="w-3/4 h-8 rounded mt-4 px-3 text-black"
+                                placeholder="$ Please Give Your withdraw Amount" type="number">
+                            <button id="withdraw-button"
+                                class="text-white bg-blue-600 rounded font-semibold py-2 px-3 block mt-4 hover:bg-[#2ec5ae]">withdraw</button>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+            
+        </main>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/db64d016c0.js" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
